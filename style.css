@@ -334,3 +334,54 @@ footer {
     padding: 14px 18px;
   }
 }
+/* ================================
+   PROJECT ONE — PREMIUM LAYOUT
+   ================================ */
+
+.featured-card {
+  grid-template-columns: 1.15fr .85fr !important;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px !important;
+  border-left: 1px solid var(--line);
+}
+
+.project-info h3 {
+  font-size: clamp(2rem, 3vw, 3rem);
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.project-info p {
+  max-width: 430px;
+  line-height: 1.7;
+}
+
+.project-info .project-meta {
+  margin-top: 30px;
+  font-size: .75rem;
+  letter-spacing: .12em;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+.project-info .project-meta strong {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+@media(max-width:850px) {
+  .featured-card {
+    grid-template-columns: 1fr !important;
+  }
+
+  .project-info {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+    padding: 40px 30px !important;
+  }
+}
