@@ -32,3 +32,21 @@ footer{display:flex;justify-content:space-between;padding:25px 8vw;border-top:1p
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}.reveal.visible{opacity:1;transform:none}
 @media(max-width:850px){nav{display:none}.hero{grid-template-columns:1fr;gap:45px;padding-top:70px}.hero-image{justify-self:start;width:min(75vw,380px)}.scroll-note{display:none}.featured-card{grid-template-columns:1fr}.video-wrap{min-height:auto}.service-grid{grid-template-columns:1fr 1fr}.about{grid-template-columns:1fr}.section{padding:85px 6vw}.nav{padding:0 6vw}}
 @media(max-width:560px){h1{font-size:3.5rem}.service-grid{grid-template-columns:1fr}.socials{flex-direction:column;gap:12px}.hero{padding-left:6vw;padding-right:6vw}.hero-actions{flex-direction:column;align-items:flex-start}.button{width:100%;text-align:center}}
+/* PROJECT VIDEO SIZE */
+.featured-card .video-wrap {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  min-height: 0 !important;
+  height: 420px !important;
+  background: #000 !important;
+}
+
+.featured-card .video-wrap video {
+  width: 236px !important;
+  height: 420px !important;
+  max-width: 236px !important;
+  max-height: 420px !important;
+  object-fit: contain !important;
+  display: block !important;
+}
